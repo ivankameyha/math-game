@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Operaciones Matemáticas</title>
+    <!-- Enlazamos el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Seymour+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h3>Proyecto Tecnológico</h3>
+        <h1>Juego de Operaciones Matemáticas</h1>
+        <!-- Selección del nivel -->
+        <div id="level-selection">
+            <button type="button" class="btn btn-outline-warning" onclick="startGame('basic')">Nivel Básico</button>
+            <button type="button" class="btn btn-outline-danger" onclick="startGame('advanced')">Nivel Avanzado</button>
+        </div>
+        <!-- Juego principal, inicialmente oculto -->
+        <div id="game" class="hidden">
+            <p id="timer">Tiempo: 30s</p>
+            <p id="question"></p>
+            <div id="options"></div>
+            <p>Puntos: <span id="score">0</span></p>
+        </div>
+        <!-- Pantalla de juego terminado, inicialmente oculta -->
+        <div id="game-over" class="hidden">
+            <h2>Juego Terminado</h2>
+            <p>Puntaje final: <span id="final-score"></span></p>
+            <button onclick="restartGame()">Jugar de nuevo</button>
+        </div>
+
+        <div class="texto-derecha">
+            Joaquín Guaymas 6°D
+        </div>
+    </div>
+    <!-- Enlazamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

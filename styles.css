@@ -1,0 +1,122 @@
+/* Estilo para el cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+/* Estilo para los botones */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Estilo para los botones de opciones */
+#options button {
+  display: block;
+  margin: 5px auto;
+}
+
+button:hover {
+    background-color: rgb(177, 106, 19);
+}
+
+/* Colores para respuestas correctas e incorrectas */
+.correct {
+  background-color: #4caf50; /* Verde */
+  color: black;
+}
+
+.incorrect {
+  background-color: #f44336; /* Rojo */
+  color: black;
+}
+
+#timer {
+  color: #f44336;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#options {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+#game {
+  background-color: rgba(19, 124, 150, 0.541);
+  border: 5px solid black;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  border: none;
+  background-color:rgb(238, 153, 49);
+}
+
+
+
+h1,h2 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    5px 5px 0 #000; /* Borde negro */
+}
+
+.texto-derecha {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .container {
+      font-size: 16px; 
+  }
+
+  #options {
+    width: 100%;
+  }
+}
