@@ -45,10 +45,6 @@ button {
   margin: 5px auto;
 }
 
-button:hover {
-    background-color: rgb(177, 106, 19);
-}
-
 /* Colores para respuestas correctas e incorrectas */
 .correct {
   background-color: #4caf50; /* Verde */
@@ -82,7 +78,7 @@ button:hover {
 }
 
 body {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive, 'Courier New', Courier, monospace;
   font-weight: 400;
   font-style: normal;
 }
@@ -95,8 +91,6 @@ button {
   border: none;
   background-color:rgb(238, 153, 49);
 }
-
-
 
 h1,h2 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
