@@ -18,7 +18,7 @@ const equationQuestions = [
     { equation: '4x + 7 = 31', answer: 6 },
     { equation: '5x - 9 = 36', answer: 9 },
     { equation: '4 + 12x = 52', answer: 4 },
-    { equation: '7x - 3 = 50', answer: 8 },
+    { equation: '7x - 3 = 53', answer: 8 },
     { equation: '13 - x = 10', answer: 3 },
     { equation: '7 + (12/2 - x) = 10', answer: 3 },
     { equation: '1 + (6/6 + x) = 68', answer: 66 },
@@ -43,7 +43,7 @@ function startGame(level) {
 function startTimer() {
     timer = setInterval(() => {
         timeLeft--;
-        document.getElementById('timer').innerText = `Tiempo: ${timeLeft}s`;
+        document.getElementById('timer').innerHTML = `Tiempo: ${timeLeft}s <i class="fa-solid fa-stopwatch"></i>`;
         if (timeLeft <= 0) {
             clearInterval(timer);
             endGame();

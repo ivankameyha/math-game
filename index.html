@@ -13,12 +13,12 @@
 <body>
     <div class="container">
         <h3>Proyecto Tecnológico</h3>
-        <h1>Juego de Operaciones Matemáticas</h1>
+        <h1>Juego de Operaciones Matemáticas <i class="fa-solid fa-calculator fa-fade"></i></h1>
         <!-- Selección del nivel -->
         <div id="level-selection">
-            <button type="button" class="btn btn-outline-warning" onclick="startGame('basic')">Nivel Básico</button>
-            <button type="button" class="btn btn-outline-danger" onclick="startGame('advanced')">Nivel Intermedio</button>
-            <button onclick="startGame('equation')">Nivel Avanzado</button>
+            <button type="button" class="btn btn-outline-warning" onclick="startGame('basic')">Nivel Básico <i class="fa-solid fa-plus-minus"></i></button>
+            <button type="button" class="btn btn-outline-danger" onclick="startGame('advanced')">Nivel Intermedio <i class="fa-solid fa-square-root-variable"></i></button>
+            <button onclick="startGame('equation')">Nivel Avanzado <i class="fa-solid fa-fire"></i></button>
         </div>
         <!-- Juego principal, inicialmente oculto -->
         <div id="game" class="hidden">
@@ -40,5 +40,6 @@
     </div>
     <!-- Enlazamos el archivo JavaScript -->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7ef1bfd351.js" crossorigin="anonymous"></script>
 </body>
 </html>
